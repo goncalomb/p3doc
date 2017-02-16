@@ -1,0 +1,16 @@
+title: p3doc
+email: contact@goncalomb.com
+description: >
+  Documentation for the P3 educational CPU.
+baseurl: ""
+url: ""
+
+repository: goncalomb/p3doc
+
+markdown: kramdown
+theme: minima
+gems:
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - Gemfile.lock.orig
