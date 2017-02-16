@@ -13,4 +13,3 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
-  - Gemfile.lock.orig
