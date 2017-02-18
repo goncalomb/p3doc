@@ -9,7 +9,7 @@ title: false
 
 **This is a work in progress.** If you want to contribute with content to this website, check [p3doc on GitHub](https://github.com/goncalomb/p3doc).
 
-If you have any questions or suggestions you can contact me:
+Please contact me with any issues or suggestions:
 
  * Gonçalo Baltazar
  * GitHub: [goncalomb](https://github.com/goncalomb)
@@ -18,7 +18,7 @@ If you have any questions or suggestions you can contact me:
 
 ## P3 CPU Introduction ##
 
-The P3 is a 16-bit CPU used at Instituto Superior Técnico (IST) as a learning tool for Computer Engineering students.
+The P3 is a 16-bit CPU used at [Instituto Superior Técnico](https://tecnico.ulisboa.pt/en/) (IST) as a learning tool for Computer Engineering students.
 
 It is described in chapters 10, 11 and 12 of the book:
 
