@@ -7,6 +7,15 @@ title: Technical Description
 
 The P3 is a 16-bit CPU with 16-bit address and data bus.
 
+## Specifications ##
+
+* 16-bit architecture (16-bit address and data bus)
+* CISC design
+* 8 general purpose registers (1 always 0x0000)
+* 45 instructions (default)
+* 4 addressing modes
+* 1 interrupt signal
+
 ## Registers ##
 
 The P3 has 8 general purpose registers, R0-R7. (R0 is always 0x0000, cannot be changed).
