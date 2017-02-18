@@ -8,7 +8,7 @@ url: ""
 repository: goncalomb/p3doc
 
 markdown: kramdown
-theme: minima
+theme:
 gems:
 exclude:
   - Gemfile
