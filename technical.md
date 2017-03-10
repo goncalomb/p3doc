@@ -10,15 +10,15 @@ The P3 is a 16-bit CPU with 16-bit address and data bus.
 ## Specifications ##
 
 * 16-bit architecture (16-bit address and data bus)
-* CISC design
-* 8 general purpose registers (1 always 0x0000)
+* CISC design (microcode)
+* 8 general purpose registers
 * 45 instructions (default)
 * 4 addressing modes
 * 1 interrupt signal
 
 ## Registers ##
 
-The P3 has 8 general purpose registers, R0-R7. (R0 is always 0x0000, cannot be changed).
+The P3 has 8 general purpose registers, R0-R7. R0 is hardwired to always contain 0x0000 (cannot the changed).
 
 Two more registers are available to the programmer, SP (stack pointer) and PC (program counter).
 
@@ -48,3 +48,19 @@ With a 16-bit address bus, the P3 can directly access 64K 16-bit words of memory
 Addresses from 0xFE00 to 0xFEFF are reserved for the interrupt vector table.
 
 Addresses from 0xFF00 to 0xFFFF are reserved for memory mapped I/O devices.
+
+## ROMs ##
+
+The P3 has 3 internal ROMs that control the CPU at the microcode level. Check the book for more information.
+
+### ROM A (64 x 9 bits) ###
+
+ROM A maps opcodes to microcode addresses on ROM C. This ROM selects the microcode that runs for a particular instruction.
+
+### ROM B (16 x 9 bits) ###
+
+ROM B maps addressing modes to microcode addresses on ROM C. This ROM selects the microcode that is used to fetch/store operands for a particular addressing mode.
+
+### ROM C (512 x 32 bits) ###
+
+ROM C (Control ROM) contains all the microcode (instructions, operand fetch/store and interrupt handling).
