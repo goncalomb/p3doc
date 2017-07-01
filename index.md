@@ -9,14 +9,7 @@ title: false
 
 **This is a work in progress.** If you want to contribute with content to this website, check [p3doc on GitHub](https://github.com/goncalomb/p3doc).
 
-Please contact me with any issues or suggestions:
-
- * Gonçalo Baltazar
- * GitHub: [goncalomb](https://github.com/goncalomb)
- * Web: [goncalomb.com](https://goncalomb.com/)
- * Email: contact<span class="hidden">.hahaha</span>@<span class="hidden">rekt</span>goncalomb<span class="hidden">.example</span>.com
-
-<p class="info-box">I also have a P3 assembler and simulator in JavaScript at <a class="alert-link" href="http://p3js.goncalomb.com/">p3js.goncalomb.com</a> where you can run programs for the P3 CPU directly on your browser.</p>
+<p class="info-box">Check the <a href="https://p3js.goncalomb.com/">P3JS assembler and simulator</a> to test/run programs for the P3 CPU directly on your browser.</p>
 
 ## P3 CPU Introduction ##
 
