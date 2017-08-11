@@ -68,4 +68,12 @@ Reading from address FFF9h fetches the state of the 8 switches (lower 8 bits).
 
 ### Terminal ###
 
-_TODO_
+The terminal screen is 80x24 characters in size and starts in scroll mode (the cursor move automatically when writing).
+
+Writing to address FFFCh sets the position of the cursor on the screen. The lower 8 bits control the column (0 to 79) and the higher 8 bits control the line (0 to 23). Writing FFFFh to this address will clear the screen and change it to character mode (the cursor will stop moving automatically).
+
+Reading from address FFFDh returns 1 if there is a pending key press to be handled and 0 otherwise.
+
+Writing to address FFFEh outputs an ASCII character at current cursor position. The cursor moves automatically when the screen is in scroll mode.
+
+Reading from address FFFFh returns the code for the last key press. Only one key is stored, subsequent reads will return 0 before another key is pressed.
