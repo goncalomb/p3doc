@@ -2,8 +2,6 @@ title: P3DOC
 email: contact@goncalomb.com
 description: >
   Unofficial documentation for the P3 educational CPU.
-baseurl: ""
-url: ""
 
 repository: goncalomb/p3doc
 
